@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(71, 149, 185);
 }
 
 #index {
@@ -12,8 +13,15 @@ button {
 
 #who {
   font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
 }
 
 #description {
   font-family: "Courier New", Courier, monospace;
+}
+
+strong {
+  font-size: larger;
+  font-family: "Poppins";
+  color: rgb(43, 52, 131);
 }
