@@ -2,14 +2,16 @@ body {
   background-color: rgb(71, 149, 185);
 }
 
-#index {
+.container {
   display: flex;
   padding: 10px;
+  justify-content: center;
 }
 
 button {
   color: #fff;
-  background-color: rgb(174, 208, 209);
+  background-color: rgb(127, 224, 253);
+  margin: 5px;
 }
 
 #who {
