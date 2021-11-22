@@ -3,6 +3,7 @@ body {
 }
 
 #index {
+  display: flex;
   padding: 10px;
 }
 
@@ -24,4 +25,28 @@ strong {
   font-size: larger;
   font-family: "Poppins";
   color: rgb(43, 52, 131);
+}
+
+#hard,
+#soft {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hardskills {
+  font-size: 15px;
+  color: azure;
+  list-style: square;
+}
+
+.softskills {
+  font-size: 15px;
+  list-style: square;
+  color: chartreuse;
+}
+
+#final {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: rgb(24, 64, 71);
 }
