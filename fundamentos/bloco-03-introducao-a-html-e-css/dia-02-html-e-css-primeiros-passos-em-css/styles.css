@@ -1,0 +1,19 @@
+body {
+}
+
+#index {
+  padding: 10px;
+}
+
+button {
+  color: #fff;
+  background-color: rgb(174, 208, 209);
+}
+
+#who {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#description {
+  font-family: "Courier New", Courier, monospace;
+}
