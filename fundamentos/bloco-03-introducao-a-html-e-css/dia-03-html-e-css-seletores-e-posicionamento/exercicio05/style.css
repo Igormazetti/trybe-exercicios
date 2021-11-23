@@ -31,7 +31,7 @@ li em {
 
 #prog li:not(:nth-child(n + 4)) {
   color: blue;
-  /* Este seletor coloca a cor de font azul em todos os elementos exceto do 4 em diante */
+  /* Este seletor coloca a cor de font azul em todos os elementos exceto do 4º em diante */
 }
 
 .rosa {
