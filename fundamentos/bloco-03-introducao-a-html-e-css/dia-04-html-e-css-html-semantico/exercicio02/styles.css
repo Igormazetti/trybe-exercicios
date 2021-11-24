@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(166, 233, 245);
+}
+
+.tit {
+  margin: 0 25%;
+  color: rgb(20, 18, 158);
+}
+
+.link li {
+  display: inline;
+  margin: 20px 5px;
+}
+
+img {
+  width: 300px;
+
+  float: left;
+  margin-right: 15px;
+}
+
+.classif {
+  display: inline-block;
+}
+
+p {
+  margin-left: 300px;
+}
+
+.content article {
+  width: 60%;
+}
+
+.content aside {
+  position: relative;
+  bottom: 1200px;
+  height: 100px;
+  width: 450px;
+  float: right;
+}
+
+.bib {
+  margin: 50px 0;
+}
+
+.final {
+  margin: 30px 0;
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(12, 20, 10);
+}
+
+#something {
+  margin: 10px 60%;
+  width: 400px;
+  color: black;
+}
