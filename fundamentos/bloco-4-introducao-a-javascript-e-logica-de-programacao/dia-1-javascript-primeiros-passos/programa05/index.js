@@ -6,7 +6,7 @@ const soma = firstAng + secondAng + thirdAng;
 
 if (soma <= 180) {
   console.log(true);
-} else if (soma > 180) {
+} else if (soma > 180 || soma < 0) {
   console.log(false);
 } else {
   console.log("Valor inválido");
