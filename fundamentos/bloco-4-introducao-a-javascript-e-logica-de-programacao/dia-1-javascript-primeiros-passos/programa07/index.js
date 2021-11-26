@@ -1,6 +1,6 @@
-const nota = 92;
+const nota = 65;
 
-switch (nota) {
+switch (true) {
   case nota >= 90 && nota <= 100:
     console.log("A");
     break;
