@@ -1,21 +1,11 @@
-let firstNumber = Math.floor(Math.random() * 60) + 1;
-let secondNumber = Math.floor(Math.random() * 60) + 1;
-let thirdNumber = Math.floor(Math.random() * 60) + 1;
-let fourthNumber = Math.floor(Math.random() * 60) + 1;
-let fifthNumber = Math.floor(Math.random() * 60) + 1;
-let sixthNumber = Math.floor(Math.random() * 60) + 1;
+let megasena = [];
+for (let count = 0; count < 6; count += 1) {
+  megasena.push(Math.floor(Math.random() * 60) + 1);
+}
 
-let megasena = [
-  firstNumber,
-  secondNumber,
-  thirdNumber,
-  fourthNumber,
-  fifthNumber,
-  sixthNumber,
-];
 let igor = [7, 17, 34, 42, 48, 55];
 
-let count = 0;
+let countHits = 0;
 
 for (
   let indexMegaSena = 0;
@@ -28,7 +18,7 @@ for (
 
     if (megasena[indexMegaSena] === igor[indexIgor]) {
       console.log("Acertou!!");
-      count += 1;
+      countHits += 1;
     }
   }
 }
