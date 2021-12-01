@@ -3,10 +3,10 @@ function retornaMaior(arr) {
 
   for (let index in arr) {
     if (arr[index].length > maior) {
-      maior = arr[index].length;
+      maior = arr[index];
     }
   }
-  console.log(arr);
+  console.log(maior);
 }
 
 retornaMaior(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]);
