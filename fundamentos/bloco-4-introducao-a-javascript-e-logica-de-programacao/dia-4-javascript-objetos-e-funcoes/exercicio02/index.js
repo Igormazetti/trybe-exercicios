@@ -1,8 +1,8 @@
 let maior = 0;
 function retornaMaior(arr) {
-  for (let index = 0; index < arr.length; index++) {
+  for (let index in arr) {
     if (arr[index] > maior) {
-      maior = arr[index];
+      maior = index;
     }
   }
 }
