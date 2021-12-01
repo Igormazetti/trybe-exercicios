@@ -29,6 +29,7 @@ let moradores = {
   ],
 };
 
+const blocoUm = moradores.blocoUm;
 const blocoDois = moradores.blocoDois;
 
 for (prop of blocoDois) {
@@ -42,4 +43,10 @@ for (prop of blocoDois) {
   );
 }
 
-// const blocoUm = moradores.blocoUm;
+for (info of blocoUm) {
+  console.log(info.nome + " " + info.sobrenome);
+}
+
+for (info of blocoDois) {
+  console.log(info.nome + " " + info.sobrenome);
+}
