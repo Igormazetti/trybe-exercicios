@@ -8,4 +8,4 @@ function retornaRepetido(arr) {
   console.log(result);
 }
 
-retornaRepetido([2, 3, 2, 5, 8, 2, 3]);
+retornaRepetido([2, 3, 2, 3, 3, 2, 3]);
