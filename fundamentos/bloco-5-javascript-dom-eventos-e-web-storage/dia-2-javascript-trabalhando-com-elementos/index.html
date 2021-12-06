@@ -90,6 +90,28 @@
       seven.setAttribute("src", "https://picsum.photos/200");
       seven.className = "small-image";
       selectSectionLeft.appendChild(seven);
+
+      let list = [
+        "um",
+        "dois",
+        "tres",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+      for (index in list) {
+        let iten = list[index];
+
+        let selectSectionRight =
+          document.getElementsByClassName("right-content")[0];
+        let eight = document.createElement("ul");
+        eight.innerText = iten;
+        selectSectionRight.appendChild(eight);
+      }
     </script>
   </body>
 </html>
