@@ -59,6 +59,7 @@
     <script>
       let all = document.getElementsByTagName("body")[0];
       let one = document.createElement("h1");
+      one.className = "title";
       one.innerText = "Exercício 5.2 - JavaScript DOM";
       all.appendChild(one);
 
@@ -114,8 +115,11 @@
       }
 
       let nine = document.createElement("h3");
+      nine.className = "description";
       let nineOne = document.createElement("h3");
+      nineOne.className = "description";
       let nineTwo = document.createElement("h3");
+      nineTwo.className = "description";
       allMain.appendChild(nine);
       allMain.appendChild(nineOne);
       allMain.appendChild(nineTwo);
