@@ -39,6 +39,14 @@ myWebpage.addEventListener("dblclick", handleSubtitle);
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+let selectTitle = document.getElementsByTagName("h1")[0];
+console.log(selectTitle);
+function handleColor() {
+  let select = document.getElementsByTagName("h1")[0];
+  select.style.color = "rgb(255, 0, 0)";
+}
+
+selectTitle.addEventListener("mouseover", handleColor);
 
 // Segue abaixo um exemplo do uso de event.target:
 
