@@ -59,3 +59,20 @@ function algo(Feriados) {
 }
 
 algo();
+
+// ex 03
+
+let selectBtn = document.getElementById("btn-holiday");
+function handleColor() {
+  const selectHoliday = document.getElementsByClassName("holiday");
+
+  for (let index = 0; index < selectHoliday.length; index += 1) {
+    if (selectHoliday[index].style.backgroundColor === "rgb(0, 184, 230)") {
+      selectHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+    } else {
+      selectHoliday[index].style.backgroundColor = "rgb(0, 184, 230)";
+    }
+  }
+}
+
+selectBtn.addEventListener("click", handleColor);
