@@ -20,7 +20,7 @@ function createDaysOfTheWeek() {
 }
 
 createDaysOfTheWeek();
-// código
+// ex 01
 
 function addDays() {
   const dezDaysList = [
@@ -29,7 +29,6 @@ function addDays() {
   ];
 
   const days = document.getElementById("days");
-  console.log(days);
 
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const day = dezDaysList[index];
@@ -48,3 +47,15 @@ function addDays() {
 }
 
 addDays();
+
+// ex 02
+
+function algo(Feriados) {
+  const btnPai = document.querySelector(".buttons-container");
+  const btn = document.createElement("button");
+  btn.innerText = "Feriados";
+  btn.setAttribute("id", "btn-holiday");
+  btnPai.appendChild(btn);
+}
+
+algo();
