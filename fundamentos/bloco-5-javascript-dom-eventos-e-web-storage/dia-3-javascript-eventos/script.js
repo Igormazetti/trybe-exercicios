@@ -50,15 +50,16 @@ addDays();
 
 // ex 02
 
-function algo(Feriados) {
+function algo(name) {
+  const dia = name;
   const btnPai = document.querySelector(".buttons-container");
   const btn = document.createElement("button");
-  btn.innerText = "Feriados";
+  btn.innerText = dia;
   btn.setAttribute("id", "btn-holiday");
   btnPai.appendChild(btn);
 }
 
-algo();
+algo("Feriados");
 
 // ex 03
 
@@ -76,3 +77,16 @@ function handleColor() {
 }
 
 selectBtn.addEventListener("click", handleColor);
+
+// ex 04
+
+function fds(dia) {
+  const day = dia;
+  const btnContainer = document.querySelector(".buttons-container");
+  const btnSexta = document.createElement("button");
+  btnSexta.innerText = day;
+  btnSexta.setAttribute("id", "btn-friday");
+  btnContainer.appendChild(btnSexta);
+}
+
+fds("Sexta-feira");
