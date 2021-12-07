@@ -90,3 +90,20 @@ function fds(dia) {
 }
 
 fds("Sexta-feira");
+
+// ex 05
+
+let selectSexta = document.getElementById("btn-friday");
+function handleText() {
+  const selectFriday = document.getElementsByClassName("friday");
+
+  for (let index = 0; index < selectFriday.length; index += 1) {
+    if (selectFriday[index].innerHTML !== "Sextou") {
+      selectFriday[index].innerHTML = "Sextou";
+    } else {
+      selectFriday[index].innerHTML = selectFriday[index];
+    }
+  }
+}
+
+selectSexta.addEventListener("click", handleText);
