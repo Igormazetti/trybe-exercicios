@@ -77,6 +77,9 @@ function handleClear() {
 
   const data = document.getElementById("data");
   data.value = null;
+
+  var radio = document.querySelector("input[type=radio][name=moradia]:checked");
+  radio.checked = false;
 }
 
 clearButton.addEventListener("click", handleClear);
