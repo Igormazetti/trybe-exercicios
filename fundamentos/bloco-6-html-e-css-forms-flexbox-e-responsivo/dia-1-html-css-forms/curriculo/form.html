@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário para cadastro de currículo</h1>
+      <p>Todos os campos devem ser preenchidos</p>
+    </header>
+    <main>
+      <form action="" id="myform">
+        <fieldset form="myform" id="fieldsetone">
+          <div>
+            <label for="text-input">
+              Nome
+              <input
+                required
+                name="nome"
+                type="text"
+                maxlength="40"
+                id="text-input"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="email-input"
+              >E-mail
+              <input
+                required
+                name="email"
+                type="text"
+                maxlength="50"
+                id="email-input"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="cpf-input"
+              >CPF
+              <input
+                required
+                name="cpf"
+                type="text"
+                maxlength="11"
+                id="cpf-input"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="endereço-input"
+              >Endereço
+              <input
+                required
+                name="endereço"
+                type="text"
+                maxlength="200"
+                id="endereço-input"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="cidade-input"
+              >Cidade
+              <input
+                required
+                name="cidade"
+                type="text"
+                maxlength="28"
+                id="cidade-input"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="list">Estado:</label>
+            <select id="list" name="list" required>
+              <option disabled selected value>Selecione seu estado</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="home-input">Casa</label>
+            <input name="moradia" type="radio" id="home-input" />
+            <label for="apt-input">Apartamento</label>
+            <input name="moradia" type="radio" id="apt-input" />
+          </div>
+        </fieldset>
+
+        <fieldset id="second-fieldset">
+          <label for="resume">Resumo do currículo:</label>
+          <textarea
+            name="curriculo"
+            id="resume"
+            cols="40"
+            rows="20"
+            maxlength="1000"
+            required
+          ></textarea>
+
+          <div>
+            <label for="cargo-input"
+              >Cargo
+              <input
+                required
+                name="cargo"
+                type="text"
+                maxlength="40"
+                id="cargo-input"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="cargo-description"
+              >Descrição do Cargo
+              <input
+                required
+                name="description"
+                type="text"
+                maxlength="500"
+                id="argo-description"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label for="data">Data de início:</label>
+            <input type="date" id="data" min="1" />
+          </div>
+
+          <button id="send" type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
