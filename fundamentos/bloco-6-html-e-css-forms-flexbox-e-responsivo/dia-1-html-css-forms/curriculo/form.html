@@ -19,13 +19,7 @@
           <div>
             <label for="text-input">
               Nome
-              <input
-                required
-                name="nome"
-                type="text"
-                maxlength="40"
-                id="text-input"
-              />
+              <input required name="nome" type="text" id="text-input" />
             </label>
           </div>
 
@@ -84,7 +78,9 @@
           <div>
             <label for="list">Estado:</label>
             <select id="list" name="list" required>
-              <option disabled selected value>Selecione seu estado</option>
+              <option id="firstopt" disabled selected value>
+                Selecione seu estado
+              </option>
             </select>
           </div>
 
@@ -128,7 +124,7 @@
                 name="description"
                 type="text"
                 maxlength="500"
-                id="argo-description"
+                id="cargo-description"
               />
             </label>
           </div>
@@ -138,7 +134,10 @@
             <input type="date" id="data" min="1" />
           </div>
 
-          <button id="send" type="submit">Enviar</button>
+          <div id="botoes">
+            <button id="send" type="submit">Enviar</button>
+            <button id="clear" type="button">Limpar</button>
+          </div>
         </fieldset>
       </form>
     </main>

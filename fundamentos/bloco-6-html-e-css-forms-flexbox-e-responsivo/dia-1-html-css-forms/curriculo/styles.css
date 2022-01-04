@@ -43,3 +43,12 @@ button {
   max-width: 100px;
   justify-self: center;
 }
+
+#send {
+  margin-right: 20px;
+}
+
+textarea {
+  max-width: 400px;
+  max-height: 200px;
+}
