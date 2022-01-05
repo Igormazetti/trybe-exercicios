@@ -8,10 +8,10 @@ header {
   align-items: center;
 }
 
-p {
+/* p {
   margin-bottom: 30px;
   margin-left: 100px;
-}
+} */
 
 input {
   border: 2px solid black;
@@ -22,6 +22,7 @@ fieldset {
   background-color: rgb(243, 243, 243);
   padding: 20px;
   margin-left: 25%;
+  margin-top: 20px;
 }
 
 #fieldsetone {
@@ -39,9 +40,9 @@ fieldset {
   max-width: 800px;
 }
 
-div {
+/* div {
   max-width: 200px;
-}
+} */
 
 button {
   margin: 20px 0;
