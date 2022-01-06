@@ -41,15 +41,48 @@ function handleStates() {
 
 handleStates();
 
+const validate = new window.JustValidate("#myform");
 const sendButton = document.getElementById("send");
 function handleSubmit(event) {
-  event.preventDefault();
+  // event.preventDefault();
 
-  // const name = document.getElementById("name");
-  // if (name.value.length > 40 || name.value.length === 0) {
-  //   alert("Nome inválido");
-  // }
+  validate
+    .addField("#name", [
+      {
+        rule: "required",
+        errorMessage: "Insira seu nome",
+      },
+      {
+        rule: "maxLength",
+        value: 40,
+      },
+    ])
+    .addField("#email", [
+      {
+        rule: "required",
+        errorMessage: "Insira seu e-mail!",
+      },
+      {
+        rule: "email",
+        errorMessage: "Email inválido!",
+      },
+      {
+        rule: "maxLength",
+        value: 50,
+      },
+    ])
+    .addField("#cpf", [
+      {
+        rule: "required",
+        errorMessage: "Insira seu CPF",
+      },
+      {
+        rule: "maxLength",
+        value: 11,
+      },
+    ]);
 }
+
 sendButton.addEventListener("click", handleSubmit);
 
 const clearButton = document.getElementById("clear");
@@ -89,44 +122,3 @@ function handleClear() {
 }
 
 clearButton.addEventListener("click", handleClear);
-
-function handleValidation() {
-  const validate = new window.JustValidate("#myform");
-
-  validate
-    .addField("#name", [
-      {
-        rule: "required",
-        errorMessage: "Insira seu nome",
-      },
-      {
-        rule: "maxLength",
-        value: 40,
-      },
-    ])
-    .addField("#email", [
-      {
-        rule: "required",
-        errorMessage: "Insira seu e-mail!",
-      },
-      {
-        rule: "email",
-        errorMessage: "Email inválido!",
-      },
-      {
-        rule: "maxLength",
-        value: 50,
-      },
-    ])
-    .addField("#cpf", [
-      {
-        rule: "required",
-        errorMessage: "Insira seu CPF",
-      },
-      {
-        rule: "maxLength",
-        value: 11,
-      },
-    ]);
-}
-handleValidation();
