@@ -45,28 +45,28 @@ const sendButton = document.getElementById("send");
 function handleSubmit(event) {
   event.preventDefault();
 
-  const name = document.getElementById("text-input");
-  if (name.value.length > 40 || name.value.length === 0) {
-    alert("Nome inválido");
-  }
+  // const name = document.getElementById("name");
+  // if (name.value.length > 40 || name.value.length === 0) {
+  //   alert("Nome inválido");
+  // }
 }
 sendButton.addEventListener("click", handleSubmit);
 
 const clearButton = document.getElementById("clear");
 function handleClear() {
-  const name = document.getElementById("text-input");
+  const name = document.getElementById("name");
   name.value = null;
 
-  const email = document.getElementById("email-input");
+  const email = document.getElementById("email");
   email.value = null;
 
-  const cpf = document.getElementById("cpf-input");
+  const cpf = document.getElementById("cpf");
   cpf.value = null;
 
-  const endereco = document.getElementById("endereço-input");
+  const endereco = document.getElementById("endereco");
   endereco.value = null;
 
-  const cidade = document.getElementById("cidade-input");
+  const cidade = document.getElementById("cidade");
   cidade.value = null;
 
   const resumo = document.getElementById("resume");
@@ -89,3 +89,44 @@ function handleClear() {
 }
 
 clearButton.addEventListener("click", handleClear);
+
+function handleValidation() {
+  const validate = new window.JustValidate("#myform");
+
+  validate
+    .addField("#name", [
+      {
+        rule: "required",
+        errorMessage: "Insira seu nome",
+      },
+      {
+        rule: "maxLength",
+        value: 40,
+      },
+    ])
+    .addField("#email", [
+      {
+        rule: "required",
+        errorMessage: "Insira seu e-mail!",
+      },
+      {
+        rule: "email",
+        errorMessage: "Email inválido!",
+      },
+      {
+        rule: "maxLength",
+        value: 50,
+      },
+    ])
+    .addField("#cpf", [
+      {
+        rule: "required",
+        errorMessage: "Insira seu CPF",
+      },
+      {
+        rule: "maxLength",
+        value: 11,
+      },
+    ]);
+}
+handleValidation();
