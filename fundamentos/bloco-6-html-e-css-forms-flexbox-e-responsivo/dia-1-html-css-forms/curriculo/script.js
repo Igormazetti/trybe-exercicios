@@ -44,8 +44,6 @@ handleStates();
 const validate = new window.JustValidate("#myform");
 const sendButton = document.getElementById("send");
 function handleSubmit(event) {
-  // event.preventDefault();
-
   validate
     .addField("#name", [
       {
@@ -80,7 +78,10 @@ function handleSubmit(event) {
         rule: "maxLength",
         value: 11,
       },
-    ]);
+    ])
+    .onSuccess((event) => {
+      event.preventDefault();
+    });
 }
 
 sendButton.addEventListener("click", handleSubmit);
