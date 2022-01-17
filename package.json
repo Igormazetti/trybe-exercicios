@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "just-validate": "^3.2.2"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
   }
+
 }
