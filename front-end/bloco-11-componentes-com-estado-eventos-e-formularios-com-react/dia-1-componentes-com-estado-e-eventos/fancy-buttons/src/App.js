@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import React, { Component } from "react";
 
 export class App extends Component {
@@ -6,25 +7,42 @@ export class App extends Component {
     this.handleClickFirst = this.handleClickFirst.bind(this);
     this.handleClickSecond = this.handleClickSecond.bind(this);
     this.handleClickThird = this.handleClickThird.bind(this);
+
+    this.state = {
+      clicksBtnOne: 0,
+      clicksBtnTwo: 0,
+      clicksBtnThree: 0,
+    };
   }
 
   handleClickFirst() {
-    console.log(this);
-    console.log("Clicou no botão 01");
+    this.setState((estadoAnterior) => ({
+      clicksBtnOne: estadoAnterior.clicksBtnOne + 1,
+    }));
   }
   handleClickSecond() {
-    console.log("Clicou no botão 02");
+    this.setState((estadoAnterior) => ({
+      clicksBtnTwo: estadoAnterior.clicksBtnTwo + 1,
+    }));
   }
   handleClickThird() {
-    console.log("Clicou no botão 03");
+    this.setState((estadoAnterior) => ({
+      clicksBtnThree: estadoAnterior.clicksBtnThree + 1,
+    }));
   }
 
   render() {
     return (
       <>
-        <button onClick={this.handleClickFirst}>Button 01</button>
-        <button onClick={this.handleClickSecond}>Button 02</button>
-        <button onClick={this.handleClickThird}>Button 03</button>
+        <button onClick={this.handleClickFirst}>
+          {this.state.clicksBtnOne}
+        </button>
+        <button onClick={this.handleClickSecond}>
+          {this.state.clicksBtnTwo}
+        </button>
+        <button onClick={this.handleClickThird}>
+          {this.state.clicksBtnThree}
+        </button>
       </>
     );
   }
